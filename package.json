@@ -9,10 +9,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@babel/runtime": "^7.25.6",
+    "axios": "^1.7.6",
     "bootstrap": "^5.2.3",
     "firebase": "^10.13.1",
+    "html5-qrcode": "^2.1.5",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-phone-input-2": "^2.15.1",
+    "react-qr-scanner": "^1.0.0-alpha.11"
   },
   "devDependencies": {
     "@types/react": "^18.0.27",
