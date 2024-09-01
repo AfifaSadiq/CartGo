@@ -1,25 +1,27 @@
-import React from 'react'
-import AddToCart from "./AddToCart";
-import './Home.css'
+import React from 'react';
+import { Link } from 'react-router-dom';
+import QRScanner from "./QRScanner";
+import './Home.css';
 
 const Home = () => {
   return (
     <>
-    <header className="header">
+      <header className="header">
         <a href="/" className="logo">CartGO</a>
         <nav className="navbar">
-            <a href="/">home</a>
-            <a href="/Cart">cart</a>
-            <a href="/">payments</a>
-            <a href="/">contact</a>
-            <a href="/">logout</a>
+          <Link to="/">home</Link>
+          <Link to="/">cart</Link>
+          <Link to="/">payments</Link>
+          <Link to="/">contact</Link>
+          <Link to="/">logout</Link>
         </nav>
-    </header>
-    <div className="AddToCart">
-      <AddToCart />
-    </div>
+      </header>
+      
+      <div>
+        <QRScanner />
+      </div>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

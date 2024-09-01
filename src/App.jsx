@@ -1,14 +1,17 @@
-import React from 'react'
-import Home from './components/Home'
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Home from './components/Home';
+import Cart from './components/Cart';
 
 const App = () => {
   return (
-    <>
-    <div>
-      <Home />
-    </div>
-    </>
-  )
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/AddToCart" element={<Cart />} />
+      </Routes>
+    </Router>
+  );
+};
 
-export default App
+export default App;
